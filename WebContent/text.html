@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+<meta name="keywords" content="站长,网页特效,网页特效代码,js特效,js脚本,脚本,广告代码,zzjs,zzjs.net,www.zzjs.net,站长特效 网" />
+<meta name="description" content="www.zzjs.net,站长特效网，站长必备js特效及广告代码。大量高质量js特效，提供高质量广告代码下载,尽在站长特效网" />
+<title>网页特效 根据单选框改变的文本框 站长特效网</title>
+<script language="javascript">
+<!--
+function changeItem(i)
+{//欢迎来到站长特效网，我们的网址是www. zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+    var k = 2;
+ for(var j = 0;j < k;j++){
+     if(j == i){
+      document.all["Div" + j].style.display = "block";
+  }
+  else{
+      document.all["Div" + j].style.display = "none";
+  }
+ }
+}//欢迎来到站长特效网，我们的网址是www.zzjs.net，很好记，zz站长，js就是js特效，本站收集大量高质量js代码，还有许多广告代码下载。
+-->
+</script>
+</head>
+<body>
+<a href="http://www.zzjs.net/">站长特效网</a>,站长必备的高质量网页特效和广告代码。zzjs.net，站长js特效。<hr>
+<!--欢迎来到站长特效网，我们网站收集大量高质量js特效，提供许多广告代码下载，网址：www.zzjs.net，zzjs@msn.com,用.net打造靓站-->
+<input type="radio" name="region" value="1" checked onClick="return changeItem(0);">单选1
+<input type="radio" name="region" value="2" onClick="return changeItem(1);">单选2<br>
+<div id="Div0" style="display:block;">Item1：<input type="text" name="textfield"></div>
+<div id="Div1" style="display:none;">Item2：<input type="text" name="textfield2"></div>
+</body>
+</html>

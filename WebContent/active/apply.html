@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>活动内容</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css"  href="css/styleform.css"/>
+	</head>
+	<body>
+		<header id="header" class="site-header">
+    <nav class="navbar navbar-default navbar-fixed-top" >
+        <div class="container ">
+            <div class="navbar-header">  <!--width:200%; height:370%;   style="margin-top:-10px; width:100%;"--> 
+                <a href="#" class="navbar-brand logo"> <img src="images/L-LOGO-1.jpg"  alt="忆美.红星"></a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+               <div class="nav-r">
+                <ul class="nav navbar-nav navbar-right">
+                   <li><a href="#"><span class="glyphicon glyphicon-home"></span> 我的村庄</a></li>
+                   <li><a href="#"><span class="glyphicon glyphicon-globe" ></span> 美丽的房屋</a></li>
+				   <li><a href="#"><span class="glyphicon glyphicon-plane" ></span> 便捷的交通</a></li>
+				   <li><a href="#"><span class="glyphicon glyphicon-fire" ></span> 多彩的活动</a></li>
+				   <li class="active"><a href="#"><span class="glyphicon glyphicon-cutlery" ></span> 美味的食物</a></li>
+				   <li><a href="#"><span class="glyphicon glyphicon-user" ></span> 个人中心</a></li>
+				   <li><a href="#"><span class="glyphicon glyphicon-heart" ></span> 关于我们</a></li><br>
+                </ul> 
+               </div>
+               <div class="nav-l">
+                <ul class=" nav navbar-nav">
+                   <li class=""><a href="#"><span class="glyphicon glyphicon-edit" ></span> 注册 </a></li>
+                   <li class=""><a href="#"><span class="glyphicon glyphicon-off" ></span> 登录</a></li>
+                </ul>
+               </div>    
+            </div>       
+        </div>   
+    </nav>
+</header>
+		<div class="register">
+			<div class="message">×××活动表</div><br/><br/>
+              <hr class="hr15" />
+			
+			<!-- 通过onsubmit验证是否提交  false不提交，，true 提交-->
+			<form action="../register" method="get" name="registerForm" onsubmit="return checkdata()">
+				活动名称：<input     class="pp" type="text"/>
+				<hr class="hr15" />
+				    活动时间：<input  class="pp" type="text"/>
+				    <hr class="hr15" />
+			        活动地点：<input  type="text" />
+			        <hr class="hr15" />
+				活动时长：<input  type="text" />
+				<hr class="hr15" />
+				<hr class="hr15" />
+			        
+                         主要内容：
+            <textarea  class="introduce"></textarea>    <br/><br/>
+                <hr class="hr15" />
+				<input value="我要报名" type="submit"/>
+			</form>
+			
+			<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		</div>
+	</body>
+</html>

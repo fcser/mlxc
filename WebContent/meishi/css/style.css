@@ -1,0 +1,585 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    font-size: 1.5em;
+    line-height: 1.75em;
+    color: #959595;
+    font-family:"Helvetica Neue",Helvetical,Arial,"Microsoft Yahei UI","Microsoft Yehei",SimHei,"\5B8B\4F53",simsun,sans-serif;
+    -webkit-font-smoothing: antialiased;
+	
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Novecentosanswide-Bold", sans-serif;
+  color: #222222;
+}
+.contact-info h2{
+	font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+  color: #e04d47;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: normal;
+}
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+a{
+  text-decoration: none;
+  color: #CCCCCC;
+}
+a:hover{
+	color: #999999;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    display: block;
+    padding: 15px 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid #f3f3f3;
+    z-index: 9991;
+}
+.navbar-brand{
+	margin-top:15px;
+	text-align:center;
+}
+/*.navbar-brand img{
+	margin-top:5%;
+}
+*/
+.nav-l{
+	float:right;
+	margin-right: 10%;
+}
+/*.nav-r{
+	float:right;
+	margin-right:auto;
+}*/
+.navbar-collapse{
+	margin-top:15px;
+}
+.site-header .navbar-collapse ul li a{
+  display: block;
+  /*color: #e04d47;*/
+}
+.site-header .navbar-collapse ul li a:hover {
+  background: #e04d47;
+  color:#fff;
+}
+/*.nav-r ul {
+  border-bottom: 1px solid #484848;
+}*/
+.nav-r ul li a {
+  display: block;
+/*  padding: 1em 5%;
+  color: gray;
+  border-top: 1px solid #4f4f4f;
+  border-bottom: 1px solid #292929;*/
+}
+.nav-r ul li a:hover {
+  background-color: #e04d47;
+  color: white;
+}
+.nav-r ul li a:hover {
+  background-color: #e04d47;
+  color: white;
+}
+
+
+
+#myCarousel{
+	margin-top:116px;
+}
+.carousel-inner img{
+	margin:0 auto;
+	
+}
+.carousel-inner .carousel-caption h2{
+	color:#FFF;
+	font-size:25px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-weight:400;
+}
+
+.tab-h2{
+	font-size:30px;
+	text-align:left;
+	color:#e04d47;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:1px;
+	padding-bottom:0px;
+	margin-bottom: 0;
+	
+	
+}
+.tab1{
+	/*margin:30px 0;*/
+	background:#fff;
+}
+.tab1-btn{
+	float:right;
+	border-radius:15px;
+	text-align:center;
+	background:#e04d47;
+	color:#fff;
+}
+.tab1-btn a:hover{
+	color:#666;
+	text-decoration:none;
+	
+}
+
+
+.media-left{
+	font-size:30px;
+	color:#e04d47;
+	float:left;
+}
+.tab1 .col{
+	padding:15px;
+}
+.tab1 .col a{
+	color:#e04d47;
+}
+
+.tab1 .col a:hover{
+	color:#e04d47;
+}
+.tab1 .m1{
+	float:right;
+}
+@media(min-width:768px){
+	tab-h2{
+		font-size:26px;
+	}
+
+}
+@media(min-width:992px){
+	tab-h2{
+		font-size:28px;
+	}
+}
+@media(min-width:1200px){
+	tab-h2{
+		font-size:30px;
+	}
+}
+.tab2{
+    position: relative;
+    display: block;
+    color: black;
+    width: 100%;
+    height: 100%;
+   /* background-color: rgba(F, F,F , 0.7);*/
+  background:#FFFFFF ;
+    padding: 0;
+
+}
+.tab2-h2{
+	font-size:30px;
+	text-align:left;
+	color:#fff;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:1px;
+	padding:5px;
+	border-bottom:1px solid #AAA;
+	
+}
+.tab2 .col-2{
+	padding:15px 20px;
+}
+.col-2 li{
+	color: #000000;
+	font-size:22px;
+	line-height: 28px;
+}
+.tab2 .col-2 a{
+	color:#000000;
+}
+
+.tab2 .col-2 a:hover{
+	color:#000000;
+}
+.s-part0 .b-title{
+	padding:15px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+}
+
+.s-part0 .partner-logo0 img{
+	width:100%;
+}
+
+.s-part0 .sh-2{
+	padding:10px;
+	
+}
+.s-part0 input{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:25px;
+	text-align:center;
+	border:1px solid #333;
+	color:#CCC;
+	margin-left:20px;
+}
+.banner{background:#fff;}
+.banner .s-title{
+	padding:10px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+	
+}
+.banner .nav a{
+	color:#e04d47;
+}
+.banner .nav a:hover{
+	color:#FFF;
+	background:#e04d47;
+}
+#s-mean{
+	padding:10px;
+}
+.s-part1 .b-title{
+	padding:15px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+	margin:0;
+}
+.s-part2 .b-title{
+	padding:15px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+	text-align:right;
+}
+.s-part0 .partner-logo0{
+	padding:15px;
+	text-align:center;
+
+}
+
+.s-part1 .partner-logo1{
+	padding:20px;
+	text-align:center;
+
+}
+.s-part2 .partner-logo2{
+	padding:30px;
+    text-align:center;
+}
+.s-part3 .partner-logo3{
+	padding:20px;
+    text-align:center;
+}
+.s-part4 .partner-logo4{
+	padding:30px;
+    text-align:center;
+}
+
+.s-part1{
+    position: relative;
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 0 0px 0;
+
+}
+.s-part1 .introduce{
+	font-size:16px;
+	color: #555;
+	padding:20px;
+	text-align:center;
+	
+
+}
+.s-part2 .ih-item{           
+    position: relative;
+   /* width: 220px;
+    height: 220px;*/
+    } 
+/*//首先确定遮罩层中图片的大小
+*/
+.s-part2 .ih-item .img img{
+    position: relative;
+  /*  width: 220px;
+    height: 220px;*/
+    max-width: 100%;
+    } 
+
+
+.s-part2 .ih-item .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+	color: white;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 5px 15px 15px 15px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-backface-visibility: hidden;/* 隐藏旋转元素的背面*/
+    backface-visibility: hidden;
+    background: rgba(224, 77, 71, 0.6);   /*后面这个0.6是指的背景的透明度*/
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;   /*规定提示信息怎样出现ease-in-out以慢速度开始和结束*/
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.s-part2 .ih-item a:hover .info {
+    opacity: 1;    /*有opacity有0变成1*/            
+}
+.s-part2 h4,h6{
+	text-align:center;
+}
+.partner-logo2 .info p{
+	margin:0px;
+	text-align: center;
+}
+.s-part3{
+    position: relative;
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+     padding: 20px 0 0px 0;
+
+}
+.s-part3 .b-title{
+	padding:15px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+	margin:0;
+}
+.s-part3 .introduce{
+	font-size:15px;
+	color:#555;
+	padding:20px;
+	text-align:center;
+
+}
+
+.s-part4 .ih-item{           
+    position: relative;
+   /* width: 220px;
+    height: 220px;*/
+    } 
+/*//首先确定遮罩层中图片的大小
+*/
+.s-part4 .ih-item .img img{
+    position: relative;
+  /*  width: 220px;
+    height: 220px;*/
+    max-width: 100%;
+    } 
+
+
+.s-part4 .ih-item .info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+	color: white;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 5px 20px 20px 20px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    -webkit-backface-visibility: hidden;/* 隐藏旋转元素的背面*/
+    backface-visibility: hidden;
+    background: rgba(224, 77, 71, 0.6);   /*后面这个0.6是指的背景的透明度*/
+    opacity: 0;
+    -webkit-transition: all 0.35s ease-in-out;   /*规定提示信息怎样出现ease-in-out以慢速度开始和结束*/
+    -moz-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.s-part4 .ih-item a:hover .info {
+    opacity: 1;    /*有opacity有0变成1*/            
+}
+.s-part4 h4,h6{
+	text-align:center;
+}
+.s-part4 .b-title{
+	padding:15px;
+	border-bottom:1px solid #999;
+	color:#e04d47;
+	text-align:right;
+}
+/*.footer .f-title{
+	font-size:30px;
+	text-align:left;
+	color: #e04d47;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:1px;
+	padding:15px;
+	border-bottom:1px solid #999;
+}
+input[type="text"], input[type="email"], textarea, .form-input {
+    width: 100%;
+    padding: 10px;
+    color: #6e6e6e;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+    margin: 0 0 30px 0;
+    -moz-box-shadow: transparent 0px 0px 3px;
+    -webkit-box-shadow: transparent 0px 0px 3px;
+    box-shadow: transparent 0px 0px 3px;
+}
+.footer .form-input:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}
+/*.footer .form-input:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}
+.footer .form-input:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}*/
+/*.footer .main-button{
+	background:#e04d47;
+	color:#FFF;
+	font-size:15px;
+	float:right;
+	box-shadow:2px 2px 2px #e04d47;
+	text-align:center;
+	padding:10px 10px 10px 10px;
+	border:#e04d47;
+
+}
+.footer .main-button:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}
+.footer .f-col{
+	padding:50px;
+}
+.footer h2{
+	color:#e04d47;
+	font-size:24px;
+}
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+.footer{
+	border-bottom:30px solid #e04d47;
+}
+.f-col li{
+	color: #e04d47;
+
+}*/*/
+.footer .f-title{
+	font-size:30px;
+	text-align:left;
+	color:#e04d47;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:1px;
+	padding:15px;
+	border-bottom:1px solid #999;
+}
+
+input[type="text"], input[type="email"], textarea, .form-input {
+    width: 100%;
+    padding:10px;
+    color: #6e6e6e;
+    background-color: #fbfbfb;
+    border: 1px solid #eeeeee;
+    margin: 20px 0px 20px 0px;
+    -moz-box-shadow: transparent 0px 0px 3px;
+    -webkit-box-shadow: transparent 0px 0px 3px;
+    box-shadow: transparent 0px 0px 3px;
+}
+.footer .form-input:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}
+
+.footer .main-button{
+	background:#e04d47;
+	color:#FFF;
+	font-size:15px;
+	float:right;
+	box-shadow:2px 2px 2px #e04d47;
+	text-align:center;
+	padding:10px 10px 10px 10px;
+	border:#e04d47;
+	margin-bottom:20px;
+
+}
+.footer .main-button:focus{
+	border:1px solid #e04d47;
+	outline:none;
+}
+
+
+input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+.footer{
+	border-bottom:30px solid #e04d47;
+}
+

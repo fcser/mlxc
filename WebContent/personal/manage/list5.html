@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="css/pintuer.css">
+<link rel="stylesheet" href="css/admin.css">
+<script src="js/jquery.js"></script>
+<script src="js/pintuer.js"></script>
+</head>
+<body>
+<form method="post" action="" id="listform">
+  <div class="panel admin-panel">
+    <div class="panel-head"><strong class="icon-reorder"> 信息查询</strong> <a href="" style="float:right; display:none;">添加字段</a></div>
+    <div class="padding border-bottom">
+      <ul class="search" style="padding-left:10px;">
+        <!--<li> <a class="button border-main icon-plus-square-o" href="add.html"> 添加内容</a> </li>-->
+        <li>搜索：</li>
+        <li>
+          
+          ID
+          <select name="s_isvouch" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">
+          	<option value="">选择</option>
+            <option value="">刘备</option>
+            <option value="">李白</option>
+            <option value="">后羿</option>
+            <option value="">亚瑟</option>
+            <option value="">妲己</option>
+            <option value="">关羽</option>
+           
+          </select>
+          &nbsp;&nbsp;
+                                   活动名称
+          <select name="s_istop" class="input" onchange="changesearch()"  style="width:60px; line-height:17px;display:inline-block">
+            <option value="">选择</option>
+           <option value="">龙舟赛</option>
+           <option value="">村里运动会</option>
+          </select>
+        </li>
+        <if condition="$iscid eq 1">
+        </if>
+        <li>
+          <input type="text" placeholder="请输入搜索关键字" name="keywords" class="input" style="width:250px; line-height:17px;display:inline-block" />
+          <a href="javascript:void(0)" class="button border-main icon-search" onclick="changesearch()" > 搜索</a></li>
+      </ul>
+    </div>
+    <table class="table table-hover text-center">
+      <tr>
+        <th width="50" style="text-align:left; padding-left:20px;"></th>
+        
+        <th width="100">ID</th>
+        
+        <th width="150">活动名称</th>
+        <th width="10%">报名时间</th>
+        <th width="310">状态</th>
+      </tr>
+      <volist name="list" id="vo">
+        <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+         <!-- <td><input type="text" name="sort[1]" value="1" style="width:50px; text-align:center; border:1px solid #ddd; padding:7px 0;" /></td>-->
+          
+          <td>刘备</td>
+       
+          <td>龙舟赛</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <!--<a class="button border-main" href=""> 已接收</a>--> <a class="button border-red" href="" > 未通过</a> </div></td>
+        </tr>
+   		 <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+          <td>李白</td>
+          
+          <td>村里运动会</td>
+          <td>2016-10-01</td>
+          <td><div class="button-group"> <a class="button border-main" href=""> 已通过</a><!-- <a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)">未接收</a> --></div></td>
+        </tr>
+         <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+          <td>后羿</td>
+          
+         <td>龙舟赛</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-main" href=""> 已通过</a> <!--<a class="button border-red" href="javascript:void(0)" onclick="return del(1,1,1)">未接收</a> --></div></td>
+        </tr>
+         <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+          <td>亚瑟</td>
+         
+          <td>村里运动会</td>
+          <td>2016-10-01</td>
+          <td><div class="button-group"> <!--<a class="button border-main" href="">已接收</a>--> <a class="button border-red" href="" > 未通过</a> </div></td>
+        </tr>
+         <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+          <td>妲己</td>
+          
+          <td>龙舟赛</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"> <a class="button border-main" href="">已通过</a> <!--<a class="button border-red" href="" onclick="return del(1,1,1)">未接收</a>--> </div></td>
+        </tr>
+         <tr>
+          <td style="text-align:left; padding-left:20px;"><input type="checkbox" name="id[]" value="" />
+           1</td>
+         <td>关羽</td>
+          
+          <td>龙舟赛</td>
+          <td>2016-07-01</td>
+          <td><div class="button-group"><!-- <a class="button border-main" href=""> 已接收</a>--> <a class="button border-red" href="" > 未通过</a> </div></td>
+        </tr>
+      
+      <tr>
+        <td colspan="8"><div class="pagelist"> <a href="">上一页</a> <span class="current">1</span><a href="">2</a><a href="">3</a><a href="">下一页</a><a href="">尾页</a> </div></td>
+      </tr>
+    </table>
+  </div>
+</form>
+<script type="text/javascript">
+
+//单个通过
+function del(id,mid,iscid){
+	if(confirm("您确定要进行该操作吗?")){
+		
+	}
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+	  if (this.checked) {
+		  this.checked = false;
+	  }
+	  else {
+		  this.checked = true;
+	  }
+  });
+})
+
+//批量未通过
+function DelSelect(){
+	var Checkbox=false;
+	 $("input[name='id[]']").each(function(){
+	  if (this.checked==true) {		
+		Checkbox=true;	
+	  }
+	});
+	if (Checkbox){
+		var t=confirm("您确认要实施该操作吗？");
+		if (t==false) return false;		
+		$("#listform").submit();		
+	}
+	else{
+		alert("请选择您要操作的内容!");
+		return false;
+	}
+}
+</script>
+</body>
+</html>
