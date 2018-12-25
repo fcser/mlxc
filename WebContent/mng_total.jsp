@@ -17,7 +17,7 @@
   <div class="logo margin-big-left fadein-top">
     <h1><img src="manage/images/cs.jpg" class="radius-circle rotate-hover" height="50" alt="" />总后台管理中心</h1>
   </div>
-  <div class="head-l"><a class="button button-little bg-green" href="index.jsp" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp; <a class="button button-little bg-red" href="login.html"><span class="icon-power-off"></span> 退出登录</a> </div>
+  <div class="head-l"><a class="button button-little bg-green" href="index.jsp" target="_blank"><span class="icon-home"></span> 前台首页</a> &nbsp;&nbsp; <a class="button button-little bg-red" href="Login.jsp"><span class="icon-power-off"></span> 退出登录</a> </div>
 </div>
 <div class="leftnav">
   <h2><span class="icon-user"></span>基本设置</h2>

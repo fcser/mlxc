@@ -34,7 +34,7 @@ public class MessageDAO {
 	  {
 		 GregorianCalendar gc=new GregorianCalendar();
 		  @SuppressWarnings("deprecation")
-		String sql="insert into message(users_id,content,datatime,sort,have,businessman) values('"+user_id+"','"+content+"','"+gc.getTime().toLocaleString()+"','"+sort+"','"+have+"','"+businessman+"')";
+		String sql="insert into message(users_id,content,datatime,sort,have,bussinessman) values('"+user_id+"','"+content+"','"+gc.getTime().toLocaleString()+"','"+sort+"','"+have+"','"+businessman+"')";
 		  try{
 			  dataprocess.ExeQuery(sql);
 		  }catch(Exception e){
@@ -180,7 +180,7 @@ public class MessageDAO {
 			PreparedStatement pstmt=null;
 			ResultSet rs=null;
 			ArrayList<Message> Items=new ArrayList<Message>();
-			String sql="select * from message where have=1 and businessman='"+businessman+"'";
+			String sql="select * from message where have=1 and bussinessman='"+businessman+"'";
 			try {
 				pstmt=(PreparedStatement) con.prepareStatement(sql);
 				rs=pstmt.executeQuery();

@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -21,7 +21,7 @@
 			<input type="password" name="pass" placeholder="请输入密码">
 			<hr class="hr15" />
 			<input type="password" name="pass2" placeholder="请再次确认密码"
-				onblur="password2Change(this)">
+				onBlur="password2Change(this)">
 			<hr class="hr15" />
 			<input type="email" name="mail" placeholder="请输入邮箱">
 			<hr class="hr15" />
